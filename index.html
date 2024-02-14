@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      
+    <!--Esfera de referencia
+      <a-sphere position="0 0 -5" radius="0.5" color="#EF2D5E"></a-sphere>-->
+    <!--Suelo-->  
+      <a-box position="0 0 -5" src="https://raw.githubusercontent.com/oluisjuan/LongCovid-Pilot/master/material/floor-texture.jpg" width="12" height="0.1" depth="12"></a-box>
+    <!--Pared de enfrente-->  
+      <a-box position="0 1.5 -11" src="https://raw.githubusercontent.com/oluisjuan/LongCovid-Pilot/master/material/plaster_wall.jpg" width="12" height="3" depth="0.1"></a-box>
+    <!--Pared derecha-->  
+      <a-box position="6 1.5 -5" src="https://raw.githubusercontent.com/oluisjuan/LongCovid-Pilot/master/material/plaster_wall.jpg" width="0.1" height="3" depth="12"></a-box>
+    <!--Pared atrás-->  
+      <a-box position="0 1.5 1" src="https://raw.githubusercontent.com/oluisjuan/LongCovid-Pilot/master/material/plaster_wall.jpg" width="12" height="3" depth="0.1"></a-box>
+    <!--Pared izquierda-->  
+      <a-box position="-6 1.5 -5" src="https://raw.githubusercontent.com/oluisjuan/LongCovid-Pilot/master/material/plaster_wall.jpg" width="0.1" height="3" depth="12"></a-box>
+    <!--Techo-->  
+      <a-box position="0 3 -5" color="#FFFFFF" width="12" height="0.1" depth="12"></a-box>
+    
+    <!--Fondo--> 
+      <a-sky src="https://cdn.glitch.global/6129616c-d685-405f-9e5a-3869316b8be0/entorno_universidad0001.jpg?v=1655202508267 "></a-sky>
+    
+      <!--Pedestal-->
+      <a-box position="0 0.1 -5" height="0.5" rotation="0 0 0" color="#FFF" width="5" depth="5"></a-box>
+    <!--Caja info-->
+      <a-box position="1 1.1 -3" height="1" rotation="0 -45 0" color="#808080" width="0.5" depth="0.5"></a-box>  
+    <!--Pelota manipulable-->
+      <a-sphere grabbable position="1 1.75 -3" radius="0.5" rotation="0 -45 0" color="red" scale="0.3 0.3 0.3"></a-sphere>  
+     
+    <!--Texto-->
+      <a-text value= "Prueba a interactuar con la pelota" color="#000" position="-1.7 0.2 -2.5" scale="1 1 1"></a-text>
+      
+    </a-scene>
+  </body>
+</html>
